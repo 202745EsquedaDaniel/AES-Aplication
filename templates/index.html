@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Aplicación AES</title>
+</head>
+<body>
+    <h2>Cifrado AES</h2>
+    <form method="POST">
+        <label>Mensaje:</label>
+        <input type="text" name="message" required>
+        <button type="submit" name="encrypt">Cifrar</button>
+        <button type="submit" name="decrypt">Descifrar</button>
+    </form>
+    <h3>Clave AES: {{ key }}</h3>
+    <h3>Mensaje cifrado: {{ encrypted }}</h3>
+    <h3>Mensaje descifrado: {{ decrypted }}</h3>
+</body>
+</html>
